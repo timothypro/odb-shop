@@ -1,0 +1,170 @@
+@import "normalize";
+$font_family: 'Oswald', 'Helvetica Neue', 'Helvetica';
+$color_font_1: rgba(64, 64, 65, 0.4);
+$color_font_2: rgba(64, 64, 65, 0.8);
+.wrapper {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: column wrap;
+  /*moz need this but I dont know*/
+  flex-flow: row wrap;
+  font-weight: bold;
+  text-align: center;
+  min-width: 320px;
+}
+.wrapper > * {
+  flex: 1 100%;
+}
+.header {
+  position: fixed;
+  display: inline-block;
+  width: 100%;
+  padding: 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background: #fff;
+  z-index: 1;
+  img {
+    margin-top: 10px;
+  }
+}
+
+.item-text {
+  color: #444;
+  text-align: left;
+}
+.item-text {
+  .price {
+    display: inline-block;
+    float: left;
+    color: $color_font_1;
+    line-height: 100%;
+    letter-spacing: -1px;
+    font-family: $font_family;
+    font-size: 40px;
+  }
+  .buynow {
+    float: left;
+    max-width: 300px;
+    padding: 10px 14px;
+    font-size: 16px;
+    margin-left: 20px;
+    text-transform: uppercase;
+  }
+}
+.item-text {
+  .buynow {
+    vertical-align: middle;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transition-property: color, background-color;
+    transition-property: color, background-color;
+    border: $color_font_1;
+    border-radius: 6px;
+    text-decoration: none;
+    background-color: $color_font_1;
+    color: white;
+    overflow: hidden;
+    &:hover,
+    &:focus,
+    &:active {
+      -webkit-animation-name: buynow;
+      animation-name: buynow;
+      -webkit-animation-duration: 1s;
+      animation-duration: 1s;
+      -webkit-animation-delay: 0.5s;
+      animation-delay: 0.5s;
+      -webkit-animation-timing-function: linear;
+      animation-timing-function: linear;
+      -webkit-animation-iteration-count: infinite;
+      animation-iteration-count: infinite;
+      background-color: $color_font_2;
+      color: white;
+    }
+  }
+}
+@media all and (max-width: 319px) {
+  .item {
+    flex: 1 0;
+  }
+  .item-img {
+    order: 1;
+    margin-top: 10%;
+    img {
+      width: 150px;
+    }
+  }
+  .item-text {
+    order: 2;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 50px;
+  }
+}
+@media all and (min-width: 320px) and (max-width:768px) {
+  .header {
+    img {
+      width: 100px;
+    }
+  }
+  .item {
+    flex: 1 0;
+  }
+  .item-img {
+    order: 1;
+    margin-top: 80px;
+    img {
+      width: 200px;
+    }
+  }
+  .item-text {
+    order: 2;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 50px;
+    .price {
+      font-size: 40px;
+      margin-bottom: 50px;
+
+    }
+    .buynow {
+      max-width: 100px;
+      font-size: 16px;
+      margin-left: 20px;
+    }
+  }
+}
+@media all and (max-width: 320px) {
+  .item-img {
+    order: 1;
+    margin-top: 20%;
+  }
+}
+@media all and (min-width: 800px) {
+  .item-text {
+    flex: 2 0;
+  }
+  .item-img {
+    order: 1;
+    margin-top: 100px;
+  }
+  .item-text {
+    order: 2;
+    margin-right: 10%;
+    margin-left: 10%;
+    margin-bottom: 5%;
+    .price {
+      font-size: 45px;
+      
+    }
+  }
+}
