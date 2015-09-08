@@ -1,5 +1,5 @@
 @import "normalize";
-$font_family: 'Oswald', 'Helvetica Neue', 'Helvetica';
+$font_family:'monospace'，fantasy;
 $color_font_1: rgba(64, 64, 65, 0.4);
 $color_font_2: rgba(64, 64, 65, 0.8);
 .wrapper {
@@ -11,7 +11,7 @@ $color_font_2: rgba(64, 64, 65, 0.8);
   -webkit-flex-flow: column wrap;
   /*moz need this but I dont know*/
   flex-flow: row wrap;
-  font-weight: bold;
+  font-weight: 700;
   text-align: center;
   min-width: 320px;
 }
@@ -50,9 +50,10 @@ $color_font_2: rgba(64, 64, 65, 0.8);
     float: left;
     max-width: 300px;
     padding: 10px 14px;
-    font-size: 16px;
+    font-size: 18px;
     margin-left: 20px;
-    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: $font_family;
   }
 }
 .item-text {
@@ -164,7 +165,7 @@ $color_font_2: rgba(64, 64, 65, 0.8);
     margin-bottom: 5%;
     .price {
       font-size: 45px;
-      
+
     }
   }
 }

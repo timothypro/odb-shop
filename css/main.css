@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* ==========================================================================
    Normalize.scss settings
    ========================================================================== */
@@ -377,7 +378,7 @@ th {
   /*moz need this but I dont know*/
   -ms-flex-flow: row wrap;
       flex-flow: row wrap;
-  font-weight: bold;
+  font-weight: 700;
   text-align: center;
   min-width: 320px; }
 
@@ -409,15 +410,16 @@ th {
   color: rgba(64, 64, 65, 0.4);
   line-height: 100%;
   letter-spacing: -1px;
-  font-family: "Oswald", "Helvetica Neue", "Helvetica";
+  font-family: "monospace" ，fantasy;
   font-size: 40px; }
 .item-text .buynow {
   float: left;
   max-width: 300px;
   padding: 10px 14px;
-  font-size: 16px;
+  font-size: 18px;
   margin-left: 20px;
-  text-transform: uppercase; }
+  letter-spacing: 1px;
+  font-family: "monospace" ，fantasy; }
 
 .item-text .buynow {
   vertical-align: middle;

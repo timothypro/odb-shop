@@ -27,8 +27,8 @@
       </p>
       <p>•每月阅读一篇文章，每周设有与文章相关的反思题或祷告，祈盼你能从这些文章中得着激励， 盼望和安慰。</p>
       <p>•日记中间附有多张小卡片，希望你能使用这些小卡向身边的人表达感谢和关爱。</p>
-      <div class="price">￥100</div>
-      <a href="#" class="buynow">buy now</a>
+      <div class="price">￥100.00</div>
+      <a href="#" class="buynow">立即购买</a>
     </article>
 
   </div>
