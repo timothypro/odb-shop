@@ -1,5 +1,5 @@
 @import "normalize";
-$font_family:'monospace'，fantasy;
+$font_family:"Helvetica Neue", "Helvetica","Hiragino Sans GB","Microsoft YaHei", "WenQuanYi Micro Hei",Arial, sans-serif;
 $color_font_1: rgba(64, 64, 65, 0.4);
 $color_font_2: rgba(64, 64, 65, 0.8);
 .wrapper {
@@ -42,7 +42,7 @@ $color_font_2: rgba(64, 64, 65, 0.8);
     float: left;
     color: $color_font_1;
     line-height: 100%;
-    letter-spacing: -4px;
+    letter-spacing: -1px;
     font-family: $font_family;
     font-size: 40px;
     font-weight:400;
