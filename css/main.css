@@ -409,17 +409,19 @@ th {
   float: left;
   color: rgba(64, 64, 65, 0.4);
   line-height: 100%;
-  letter-spacing: -1px;
+  letter-spacing: -4px;
   font-family: "monospace" ，fantasy;
-  font-size: 40px; }
+  font-size: 40px;
+  font-weight: 400; }
 .item-text .buynow {
   float: left;
   max-width: 300px;
   padding: 10px 14px;
-  font-size: 18px;
+  font-size: 20px;
   margin-left: 20px;
-  letter-spacing: 1px;
-  font-family: "monospace" ，fantasy; }
+  letter-spacing: 2px;
+  font-family: "monospace" ，fantasy;
+  font-weight: 400; }
 
 .item-text .buynow {
   vertical-align: middle;
